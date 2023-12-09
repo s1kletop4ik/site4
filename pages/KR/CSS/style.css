@@ -1,0 +1,12 @@
+#wrap{
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+}
+#result{
+    height: 200px;
+}
+#result img
+{
+    width: 100%;
+}

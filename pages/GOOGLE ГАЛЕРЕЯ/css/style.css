@@ -1,0 +1,29 @@
+.wrap {
+    width: 80%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .wrap div {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+  }
+  
+  .wrap div img {
+    width: 100%;
+  }
+  
+   p{
+    float: left;
+    margin: 0 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #444;
+    padding: 4px 10px;
+    display: inline-block;
+  }

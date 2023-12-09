@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <center>
+            <button style="margin-top: 15px;" class="myButton" onclick="
+                location.reload(true);"> Сбросить</button>
+            <button style="margin-top: 15px;" class="myButton" onclick="
+                setInterval(go,1000)">1000 мс</button>
+            <button style="margin-top: 15px;" class="myButton" onclick="
+                setInterval(go, 100)">100 mc</button>
+            <button style="margin-top: 15px;" class="myButton" onclick="
+                setInterval(go, 10)">10 mc</button>
+            <button style="margin-top: 15px;" class="myButton" onclick="
+                setInterval(go, 1)">1 mc</button>
+
+        </center>
+        <br/>
+        <div style="width: 500px; border: 1px solid #666;margin: 0 auto;">
+            <center style="color: #666; position: absolute; margin: 15px 0 0
+            235px;" id="interest">0 %</center>
+            <img id="progress" style="width: 0; height: 50px;" src="IMG/prograss.jpg">
+        </div>
+    </div>
+    
+    <script src="SCRIPTS/script.js"></script>
+</body>
+</html>

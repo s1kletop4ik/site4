@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSGenerator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="Tgenerator">
+    <h2>Настройка стилей текста</h2>
+    <p>Ведите текст:
+        <input type="text" value='Enter text' id="mainText" onchange="changeText()">
+    </p>
+    <p>Изменить размер букв(кагель):
+        <input type="number" id="textSize" min=0 max=100 onchange="changeTextSize()">
+    </p>
+    <p>Изменить цвет шрифта:
+        <input type="color" id="textColor" onchange="changeTextColor()">
+    </p>
+    <p>Изменить стиль текста:<br>
+        <select onchange="changeTextStyle()" id="textStyle" multiple>
+            <option value="bolder">Жирный</option>
+            <option value="italic">Курсив</option>
+            <option value="underline">Нижнее подчеркивание</option>
+            <option value="normal">Номальный</option>
+        </select>
+    </p>
+    <p>Измените шрифт:<br>
+        <select onchange="changeTextFamily()" id="textFamily">
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Impact">Impact</option>
+            <option value="Time New Roman">Time New Roman</option>
+        </select>
+    </p>
+    <p>Тень:<br>
+        Установить тень - <input type="checkbox" id="shadowbox" onClick="changeShadowClick();"><br>
+        Сдвиг по x - <input type="number" id="ShadowX" onchange="changeShadow()" disabled><br>
+        Сдвиг по y - <input type="number" id="ShadowY" onchange="changeShadow()" disabled><br>
+        Радиус размытия - <input type="number" id="ShadowBlur" onchange="changeShadow()" disabled><br>
+        Цвет - <input type="color" id="ShadowColor" onchange="changeShadow()" disabled>
+    </p>
+    </div>
+
+    <div class="view">
+        <p id = "result"> Text </p>
+    </div>
+
+    <div class="viewcode">
+        <textarea name="code" id="code" >Code</textarea>
+        <input type="button" onclick="getStyleLine()" value="OK">
+    </div>
+
+    <script src="SCRIPTS/script.js"></script>
+</body>
+</html>
